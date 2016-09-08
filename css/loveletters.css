@@ -332,7 +332,6 @@ h1 .git {
 /*GITHUB */
 
 .githubcontainer {
-	width: 650px;
 	background-color: rgba(0,220,220,.2);
 	font-size: 15.5pt;
 	line-height: 140%;
@@ -342,10 +341,10 @@ h1 .git {
 	padding: 2px 2px 10px 10px;
 	margin-right: 20px;
 	margin-bottom: 10px;
-	margin-right: 250px;
+	margin-right: 500px;
 	margin-top: 10px;
 	border: solid 20px rgba(255,131,250,1);
-
+	float: left;
 	
 }
 
@@ -362,10 +361,11 @@ h1 .githubcontainer {
 
 .githubaside {
 	align: center;
-	margin-right: 460px;
+/*	margin-right: 460px;*/
 	font-size: 8pt;
-	margin-left: 300px;
+/*	margin-left: 300px;*/
 	margin-top:-10px;
+	float: right;
 
 
 }
