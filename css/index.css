@@ -1,0 +1,145 @@
+/* universal styles */
+
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+
+}
+
+
+.clearfix:after {
+	display: table;
+	content:" ";
+	clear: both;
+
+
+}
+
+/* global styles */
+.left {
+	float:left;
+}
+
+.right {
+	float: right;
+}
+
+
+.loveletters {
+	min-width: 960px;
+	margin-left: 50px;
+	text-align: center;
+
+}
+
+a:link {
+	color: rgba(25,20,20,0);
+	text-decoration: none;
+	font-size: 10px;
+	font-weight: 100px;
+	font-size: italic; 
+	line-height: 30px;
+	font-weight: lighter;
+}
+
+a:active {
+	color: rgba(0,242,254,1);
+
+
+}
+
+a:visited {
+	color: rgba(25,20,20,0);
+}
+
+a:hover { 
+	color: rgba(211,136,255,1);
+	background-color: (0,242,254,1);
+	display: all;
+	font-size: 20px;
+	letter-spacing: -1.5px;
+	font-style: italic;
+
+}
+
+
+
+body {
+		font-family: "cogito";
+		font-weight: lighter;
+		margin-left: 50px;
+		background-color: rgba(25,20,20,.5);
+}
+
+ul li {
+	list-style-type: none;
+}
+
+ul li a {
+	list-style-type: none;
+	text-decoration: none;
+
+}
+
+h1 {
+	text-align: center;
+	font-size: 80px;
+	-webkit-text-fill-color: rgba(255,255,255,.15);
+	-webkit-text-stroke-width: 1.4px; 
+	-webkit-text-stroke-color: rgba(255,192,196,1);
+	font-family: "Nunito";
+	margin-bottom: 20px;
+	font-weight: lighter;
+/*	letter-spacing: 5px;*/
+}
+
+.vine {
+	-webkit-text-stroke-color: rgba(0,242,254,1);
+}
+
+.double{
+	margin-left: 5px;
+	margin-top: -129px;
+	-webkit-text-fill-color: rgba(255,255,255,0);
+	-webkit-text-stroke-width: 1px; 
+	-webkit-text-stroke-color: rgba(162,255,100,1);
+	font-family: "Nunito";
+	margin-bottom: 20px;
+	font-weight: lighter;
+}
+
+section {
+
+	margin-top: 30px;
+}
+
+h2 {
+	margin-top: -30px;
+	text-align: center;
+	margin-left: 50px;
+	font-weight: lighter;
+	color: (255,255,255,1);
+	-webkit-text-fill-color: rgba(255,255,255,1);
+}
+
+
+figcaption {
+	margin-top:-5px;
+	font-weight: normal;
+
+
+}
+
+a {
+	display: inline-block;
+	margin-right: 30px;
+}
+
+img {
+	border: 1px solid rgba(162,255,100,1);
+}
