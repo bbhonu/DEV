@@ -82,6 +82,58 @@ a:hover {
 
 }
 
+div.links {
+
+	margin-top: 60px;
+
+	text-align: center;
+
+	h2{
+		margin-bottom: 10px;
+	}
+
+
+a{
+	margin-top: -50px;
+}
+
+a:link {
+	color: rgba(211,136,255,1);
+	background-color: (0,242,254,1);
+	font-size: 20px;
+	letter-spacing: -1.5px;
+	font-style: italic;
+	font-weight: bolder;
+}
+
+a:active {
+	color: rgba(0,242,254,1);
+
+
+}
+
+a:visited {
+	color: rgba(211,136,255,1);
+}
+
+a:hover { 
+	color: rgba(0,0,0, 1);
+	background-color: (0,242,254,1);
+	display: all;
+	font-size: 20px;
+	letter-spacing: -1.5px;
+	font-style: italic;
+
+}
+	h2 {
+	font-size: 15px;
+	text-transform: uppercase;
+	margin-left: -25px;
+
+	}
+
+}// end links
+
 
 
 body {
