@@ -1,0 +1,140 @@
+/* universal styles */
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+/* global styles */
+.pic {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.pic:hover {
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.loveletters {
+  min-width: 960px;
+  text-align: center;
+}
+
+.row1 {
+  min-width: 960px;
+  text-align: center;
+}
+
+a:link {
+  color: rgba(25, 20, 20, 0);
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 100px;
+  font-size: italic;
+  line-height: 30px;
+  font-weight: lighter;
+}
+
+a:active {
+  color: #00f2fe;
+}
+
+a:visited {
+  color: rgba(25, 20, 20, 0);
+}
+
+a:hover {
+  color: #d388ff;
+  background-color: 0, 242, 254, 1;
+  display: all;
+  font-size: 20px;
+  letter-spacing: -1.5px;
+  font-style: italic;
+}
+
+body {
+  font-family: "cogito";
+  font-weight: lighter;
+  background-color: rgba(25, 20, 20, 0.5);
+}
+
+ul li {
+  list-style-type: none;
+}
+
+ul li a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+  font-size: 80px;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.15);
+  -webkit-text-stroke-width: 1.4px;
+  -webkit-text-stroke-color: #ffc0c4;
+  font-family: "Nunito";
+  margin-bottom: 20px;
+  font-weight: lighter;
+}
+
+.vine {
+  -webkit-text-stroke-color: #00f2fe;
+}
+
+.double {
+  margin-left: 5px;
+  margin-top: -129px;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #a2ff64;
+  font-family: "Nunito";
+  margin-bottom: 20px;
+  font-weight: lighter;
+}
+
+section {
+  margin-top: 5px;
+}
+
+h2 {
+  margin-top: -30px;
+  text-align: center;
+  font-weight: lighter;
+  color: 255, 255, 255, 1;
+  -webkit-text-fill-color: white;
+  margin-bottom: 40px;
+}
+
+figcaption {
+  margin-top: -5px;
+  font-weight: normal;
+}
+
+a {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+img {
+  border: 1px solid #a2ff64;
+}
