@@ -21,6 +21,16 @@
 }
 
 /* global styles */
+
+.pic {
+	opacity: 1; filter: alpha(opacity=100);
+}
+
+.pic:hover {
+	opacity: 0.3;
+	filter: alpha(opacity=30);
+}
+
 .left {
 	float:left;
 }
@@ -32,9 +42,14 @@
 
 .loveletters {
 	min-width: 960px;
-	margin-left: 50px;
 	text-align: center;
 
+}
+
+.row1 {
+
+	min-width: 960px;
+	text-align: center;
 }
 
 a:link {
@@ -72,7 +87,6 @@ a:hover {
 body {
 		font-family: "cogito";
 		font-weight: lighter;
-		margin-left: 50px;
 		background-color: rgba(25,20,20,.5);
 }
 
@@ -95,7 +109,6 @@ h1 {
 	font-family: "Nunito";
 	margin-bottom: 20px;
 	font-weight: lighter;
-/*	letter-spacing: 5px;*/
 }
 
 .vine {
@@ -115,16 +128,16 @@ h1 {
 
 section {
 
-	margin-top: 30px;
+	margin-top: 5px;
 }
 
 h2 {
 	margin-top: -30px;
 	text-align: center;
-	margin-left: 50px;
 	font-weight: lighter;
 	color: (255,255,255,1);
 	-webkit-text-fill-color: rgba(255,255,255,1);
+	margin-bottom: 40px;
 }
 
 
@@ -143,3 +156,6 @@ a {
 img {
 	border: 1px solid rgba(162,255,100,1);
 }
+
+
+

@@ -143,6 +143,7 @@ h1 .shell {
 
 
 
+
 }
 .bashaside {
 	float: right;
@@ -246,6 +247,7 @@ h1 .shell {
 	border: 9px solid rgba(255,62,150,1);
 	border-style: dotted;
 	margin-top: 20px;
+	position: relative;
 
 
 
@@ -282,6 +284,7 @@ margin-left: -50px
 	margin-left: 30px;
 	margin-top:-500px;
 	background-color: rgba(255,255,255,1);
+	position: relative;
 }
 
 h1 .git {

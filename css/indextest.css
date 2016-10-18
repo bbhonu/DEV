@@ -1,0 +1,193 @@
+/* universal styles */
+
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+
+}
+
+
+.clearfix:after {
+	display: table;
+	content:" ";
+	clear: both;
+
+
+}
+
+/* global styles */
+/*.left {
+	float:left;
+}
+
+.right {
+	float: right;
+}
+
+
+.loveletters {
+	min-width: 960px;
+	text-align: center;
+
+}
+*/
+
+/*a:link {
+	color: rgba(25,20,20,0);
+	text-decoration: none;
+	font-size: 10px;
+	font-weight: 100px;
+	font-size: italic; 
+	line-height: 30px;
+	font-weight: lighter;
+}
+
+a:active {
+	color: rgba(0,242,254,1);
+
+
+}
+
+a:visited {
+	color: rgba(25,20,20,0);
+}
+
+a:hover { 
+	color: rgba(211,136,255,1);
+	background-color: (0,242,254,1);
+	display: all;
+	font-size: 20px;
+	letter-spacing: -1.5px;
+	font-style: italic;
+
+}*/
+
+
+
+body {
+		font-family: "cogito";
+		font-weight: lighter;
+		background-color: rgba(25,20,20,.5);
+}
+
+
+body{
+	background-color:#000;
+	color:#CFB87C;
+
+}
+
+h1{
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Arvo', serif;
+	border-style: solid;
+	border: 20px 30px 20px 30px;
+}
+
+ul.img-list{
+	list-style: none;
+	text-align:center;
+
+}
+img{
+	height: 200px;
+	width: 300px;
+
+}
+ul.img-list li {
+  display: inline-block;
+  height: 200px;
+  width: 300px;
+  position: relative;
+  margin: 7.5em 1em 1em 0;
+}
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 200px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 300px;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+ul.img-list li:hover span.text-content {
+  opacity: 1;
+}
+
+
+/*h1 {
+	text-align: center;
+	font-size: 80px;
+	-webkit-text-fill-color: rgba(255,255,255,.15);
+	-webkit-text-stroke-width: 1.4px; 
+	-webkit-text-stroke-color: rgba(255,192,196,1);
+	font-family: "Nunito";
+	margin-bottom: 20px;
+	font-weight: lighter;
+}
+
+.vine {
+	-webkit-text-stroke-color: rgba(0,242,254,1);
+}
+
+.double{
+	margin-left: 5px;
+	margin-top: -129px;
+	-webkit-text-fill-color: rgba(255,255,255,0);
+	-webkit-text-stroke-width: 1px; 
+	-webkit-text-stroke-color: rgba(162,255,100,1);
+	font-family: "Nunito";
+	margin-bottom: 20px;
+	font-weight: lighter;
+}*/
+
+/*section {
+
+	margin-top: 30px;
+}
+
+h2 {
+	margin-top: -30px;
+	text-align: center;
+	font-weight: lighter;
+	color: (255,255,255,1);
+	-webkit-text-fill-color: rgba(255,255,255,1);
+}*/
+
+
+/*figcaption {
+	margin-top:-5px;
+	font-weight: normal;
+
+
+}
+
+a {
+	display: inline-block;
+	margin-right: 30px;
+}
+
+img {
+	border: 1px solid rgba(162,255,100,1);
+	display: ;
+}*/

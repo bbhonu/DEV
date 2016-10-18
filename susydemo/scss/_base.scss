@@ -1,0 +1,66 @@
+@font-face {
+	font-family:"apercu pro mono";
+	
+	src: url(../fonts/apercu_mono_pro.otf);
+}
+
+
+main, 
+aside {
+	font-family: 'apercu pro mono';
+	font-weight: 200;
+	@include box();
+}
+
+main {
+	// includes 8/12 columns in main 
+	@include span (8);
+}
+
+aside {
+	// use remaining 4/12 columns for the aside 
+	@include span (4 last);
+}
+
+
+
+//breakpoints
+
+@include susy-breakpoint($desktop) {
+	body {
+		background:$desktop-bg;
+	}//body
+}//breakpoint
+
+@include susy-breakpoint($large) {
+	body {
+		background:$large-bg;
+	}//body
+}//breakpoint
+
+@include susy-breakpoint($medium) {
+	body {
+		background:$medium-bg;
+		main{
+		@include span (6);
+	} //main
+	aside {
+		@include span (6 last);
+	}//aside
+	}//body
+}//breakpoint
+
+@include susy-breakpoint($small) {
+	body {
+		background:$small-bg;
+	}
+	main {
+		@include span (12);
+	}// main
+	aside {
+		@include span (12 last);
+	}//aside
+
+	}//body
+}//breakpoint
+

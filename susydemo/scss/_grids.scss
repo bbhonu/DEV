@@ -1,0 +1,20 @@
+$susy: (
+	columns:12,
+	gutters: 1/4,
+	);
+
+
+// !!!! important !!!!! use dis !!!!! 
+@include border-box-sizing;
+
+.container {
+	@include container;
+	width:960px;
+}
+
+// phone/tablet/desktop
+$small: 1px 480px;
+$medium: 481px 786px;
+$large: 769px 960px;
+$desktop: 960px 3000px;
+
