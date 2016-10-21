@@ -53,14 +53,14 @@ aside {
 @include susy-breakpoint($small) {
 	body {
 		background:$small-bg;
-	}
+	}//body 
 	main {
 		@include span (12);
 	}// main
 	aside {
-		@include span (12 last);
+		@include span (12 );
 	}//aside
 
-	}//body
+	
 }//breakpoint
 
