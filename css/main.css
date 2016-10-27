@@ -78,6 +78,9 @@ div.links {
 div.links h2 {
   margin-bottom: 10px;
 }
+div.links #faux a:link {
+  color: #d388ff;
+}
 div.links a {
   margin-top: -50px;
 }
