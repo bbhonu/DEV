@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "cogito";
+  src: url(../fonts/cogitolight.otf);
+}
 .clearfix:after {
   display: table;
   content: " ";
