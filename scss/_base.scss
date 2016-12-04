@@ -12,10 +12,14 @@
 }
 
 @font-face {
-	font-family:"cogito";
-	src: url(../fonts/cogitolight.otf);
+	font-family:"luculent";
+	src: url(../fonts/luculent.ttf);
 }
 
+@font-face {
+	font-family:"luculent-bolditalic";
+	src: url(../fonts/luculentbi.ttf);
+}
 
 .clearfix:after {
 	display: table;
@@ -23,6 +27,12 @@
 	clear: both;
 
 
+}
+
+.container {
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* global styles */
@@ -57,6 +67,7 @@
 	text-align: center;
 }
 
+
 a:link {
 	color: rgba(25,20,20,0);
 	text-decoration: none;
@@ -87,9 +98,10 @@ a:hover {
 
 }
 
-div.links {
+.inclass {
 
 	margin-top: 60px;
+	margin-bottom: 60px;
 
 	text-align: center;
 
@@ -136,16 +148,18 @@ a:hover {
 	h2 {
 	font-size: 15px;
 	text-transform: uppercase;
-	margin-left: -25px;
 
 	}
 
 }// end links
 
+section {
+	margin-right: 12px;
+}
 
 
 body {
-		font-family: "cogito";
+font-family: "luculent";
 		font-weight: lighter;
 		background-color: rgba(25,20,20,.5);
 }
@@ -161,30 +175,46 @@ ul li a {
 }
 
 h1 {
+
 	text-align: center;
-	font-size: 80px;
-	-webkit-text-fill-color: rgba(255,255,255,.15);
+	font-size: 100px;
+	-webkit-text-fill-color: rgba(255,255,255,.7);
 	-webkit-text-stroke-width: 1.4px; 
-	-webkit-text-stroke-color: rgba(255,192,196,1);
-	font-family: "Nunito";
-	margin-bottom: 20px;
-	font-weight: lighter;
+	-webkit-text-stroke-color: rgba(211,136,255,1);
+	font-family: "luculent-bolditalic";
+	margin-bottom: 40px;
 }
 
-.vine {
-	-webkit-text-stroke-color: rgba(0,242,254,1);
+.inclass {
+	text-align: center;
 }
 
-.double{
-	margin-left: 5px;
-	margin-top: -129px;
-	-webkit-text-fill-color: rgba(255,255,255,0);
-	-webkit-text-stroke-width: 1px; 
-	-webkit-text-stroke-color: rgba(162,255,100,1);
-	font-family: "Nunito";
-	margin-bottom: 20px;
-	font-weight: lighter;
+
+.inclass img {
+	border: none;
+	margin-top: 50px;
+	height: 60px;
+	width: 60px;
+	// margin-left: 20px;
 }
+
+.inclass a {
+	margin-left: 20px;
+
+}
+.flex {
+	display: flex;
+	align-items: center;
+	   justify-content: center;
+
+-webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+      align-content: space-around;
+
+
+}
+
+
 
 section {
 
@@ -195,8 +225,7 @@ h2 {
 	margin-top: -30px;
 	text-align: center;
 	font-weight: lighter;
-	color: (255,255,255,1);
-	-webkit-text-fill-color: rgba(255,255,255,1);
+	color: rgba(255,255,255,.7);
 	margin-bottom: 40px;
 }
 
@@ -204,7 +233,8 @@ h2 {
 figcaption {
 	margin-top:-5px;
 	font-weight: normal;
-
+	text-align: center;
+	margin-bottom: 20px;
 
 }
 
@@ -218,4 +248,72 @@ img {
 }
 
 
+// mobile 
+
+@media only screen and (max-width: 550px) {
+	.flex {
+		flex-direction:column;
+	}
+
+	a:link {
+	color: white;
+	background-color: (0,242,254,1);
+	font-size: 20px;
+	letter-spacing: -1.5px;
+}
+
+a:active {
+	color: rgba(0,242,254,1);
+
+
+}
+
+a:visited {
+	color: rgba(211,136,255,1);
+}
+
+a:hover { 
+	color: rgba(255,255,255, 1);
+	background-color: (0,242,254,1);
+	font-size: 20px;
+	letter-spacing: -1.5px;
+	font-style: italic;
+
+}
+
+
+
+
+}
+
+@media only screen and (max-width:800px){
+
+
+
+	a:link {
+	color: white;
+	background-color: (0,242,254,1);
+	font-size: 20px;
+	letter-spacing: -1.5px;
+}
+
+a:active {
+	color: rgba(0,242,254,1);
+
+
+}
+
+a:visited {
+	color: rgba(211,136,255,1);
+}
+
+a:hover { 
+	color: rgba(255,255,255, 1);
+	background-color: (0,242,254,1);
+	font-size: 20px;
+	letter-spacing: -1.5px;
+	font-style: italic;
+
+}
+}
 

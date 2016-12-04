@@ -10,13 +10,23 @@
 }
 
 @font-face {
-  font-family: "cogito";
-  src: url(../fonts/cogitolight.otf);
+  font-family: "luculent";
+  src: url(../fonts/luculent.ttf);
+}
+@font-face {
+  font-family: "luculent-bolditalic";
+  src: url(../fonts/luculentbi.ttf);
 }
 .clearfix:after {
   display: table;
   content: " ";
   clear: both;
+}
+
+.container {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* global styles */
@@ -75,20 +85,21 @@ a:hover {
   font-style: italic;
 }
 
-div.links {
+.inclass {
   margin-top: 60px;
+  margin-bottom: 60px;
   text-align: center;
 }
-div.links h2 {
+.inclass h2 {
   margin-bottom: 10px;
 }
-div.links #faux a:link {
+.inclass #faux a:link {
   color: #d388ff;
 }
-div.links a {
+.inclass a {
   margin-top: -50px;
 }
-div.links a:link {
+.inclass a:link {
   color: #d388ff;
   background-color: 0, 242, 254, 1;
   font-size: 20px;
@@ -96,13 +107,13 @@ div.links a:link {
   font-style: italic;
   font-weight: bolder;
 }
-div.links a:active {
+.inclass a:active {
   color: #00f2fe;
 }
-div.links a:visited {
+.inclass a:visited {
   color: #d388ff;
 }
-div.links a:hover {
+.inclass a:hover {
   color: black;
   background-color: 0, 242, 254, 1;
   display: all;
@@ -110,14 +121,17 @@ div.links a:hover {
   letter-spacing: -1.5px;
   font-style: italic;
 }
-div.links h2 {
+.inclass h2 {
   font-size: 15px;
   text-transform: uppercase;
-  margin-left: -25px;
+}
+
+section {
+  margin-right: 12px;
 }
 
 body {
-  font-family: "cogito";
+  font-family: "luculent";
   font-weight: lighter;
   background-color: rgba(25, 20, 20, 0.5);
 }
@@ -133,28 +147,36 @@ ul li a {
 
 h1 {
   text-align: center;
-  font-size: 80px;
-  -webkit-text-fill-color: rgba(255, 255, 255, 0.15);
+  font-size: 100px;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.7);
   -webkit-text-stroke-width: 1.4px;
-  -webkit-text-stroke-color: #ffc0c4;
-  font-family: "Nunito";
-  margin-bottom: 20px;
-  font-weight: lighter;
+  -webkit-text-stroke-color: #d388ff;
+  font-family: "luculent-bolditalic";
+  margin-bottom: 40px;
 }
 
-.vine {
-  -webkit-text-stroke-color: #00f2fe;
+.inclass {
+  text-align: center;
 }
 
-.double {
-  margin-left: 5px;
-  margin-top: -129px;
-  -webkit-text-fill-color: rgba(255, 255, 255, 0);
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #a2ff64;
-  font-family: "Nunito";
-  margin-bottom: 20px;
-  font-weight: lighter;
+.inclass img {
+  border: none;
+  margin-top: 50px;
+  height: 60px;
+  width: 60px;
+}
+
+.inclass a {
+  margin-left: 20px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  align-content: space-around;
 }
 
 section {
@@ -165,14 +187,15 @@ h2 {
   margin-top: -30px;
   text-align: center;
   font-weight: lighter;
-  color: 255, 255, 255, 1;
-  -webkit-text-fill-color: white;
+  color: rgba(255, 255, 255, 0.7);
   margin-bottom: 40px;
 }
 
 figcaption {
   margin-top: -5px;
   font-weight: normal;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 a {
@@ -182,4 +205,57 @@ a {
 
 img {
   border: 1px solid #a2ff64;
+}
+
+@media only screen and (max-width: 550px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  a:link {
+    color: white;
+    background-color: 0, 242, 254, 1;
+    font-size: 20px;
+    letter-spacing: -1.5px;
+  }
+
+  a:active {
+    color: #00f2fe;
+  }
+
+  a:visited {
+    color: #d388ff;
+  }
+
+  a:hover {
+    color: white;
+    background-color: 0, 242, 254, 1;
+    font-size: 20px;
+    letter-spacing: -1.5px;
+    font-style: italic;
+  }
+}
+@media only screen and (max-width: 800px) {
+  a:link {
+    color: white;
+    background-color: 0, 242, 254, 1;
+    font-size: 20px;
+    letter-spacing: -1.5px;
+  }
+
+  a:active {
+    color: #00f2fe;
+  }
+
+  a:visited {
+    color: #d388ff;
+  }
+
+  a:hover {
+    color: white;
+    background-color: 0, 242, 254, 1;
+    font-size: 20px;
+    letter-spacing: -1.5px;
+    font-style: italic;
+  }
 }
