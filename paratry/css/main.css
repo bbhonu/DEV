@@ -56,7 +56,11 @@ html {
   z-index: 5;
 }
 
-
+#group2 .base2 {
+  background: url('http://lorempixel.com/output/abstract-q-c-640-480-1.jpg') 50% 50% no-repeat;
+  background-size: cover;
+  opacity: .5;
+}
 
 
 
@@ -74,14 +78,16 @@ html {
 }
 
 #group2 .base {
-background-color: blue;
+  background: url('http://lorempixel.com/output/abstract-q-g-640-480-4.jpg') 50% 50% no-repeat;
   background-size: cover;
+  opacity: 1;
 }
 
 #group2 .base2 {
 background-color: red;
   background-size: cover;
   opacity: .5;
+  z-index: 400;
 }
 
 #group3 {
@@ -124,4 +130,31 @@ p {
   transform: translateZ(100px) scale(0.6);
   position: absolute;
   z-index: 800;
+}
+
+@media (min-width: 600px) {
+section  { padding-bottom: 50%; }
+@media (min-width: 700px) {
+section  { padding-bottom: 45%; }
+}
+
+
+
+
+section img {
+  width: 50%;
+  height: 50%
+  max-width: none;
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+img {
+  overflow: hidden;
+  padding-bottom: 55%;
+  z-index:1
 }
