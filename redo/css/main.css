@@ -1,0 +1,657 @@
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+/* line 11, ../scss/_before.scss */
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+/* line 25, ../scss/_before.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+/* line 34, ../scss/_before.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+/* line 49, ../scss/_before.scss */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+/* line 62, ../scss/_before.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/* line 72, ../scss/_before.scss */
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+/* line 80, ../scss/_before.scss */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* line 3, ../scss/_base.scss */
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 10, ../scss/_base.scss */
+.container {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+/* line 17, ../scss/_base.scss */
+.clearfix {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+/* line 23, ../scss/_base.scss */
+.container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+@font-face {
+  font-family: "luculent";
+  src: url(../fonts/luculent.ttf);
+}
+@font-face {
+  font-family: "luculent-bolditalic";
+  src: url(../fonts/luculentbi.ttf);
+}
+@font-face {
+  font-family: "luculent-italic";
+  src: url(../fonts/luculenti.ttf);
+}
+@font-face {
+  font-family: "apercupro";
+  src: url(../fonts/apercu_regular_pro.otf);
+}
+/* line 53, ../scss/_base.scss */
+.kern {
+  letter-spacing: -1px;
+}
+
+/* line 57, ../scss/_base.scss */
+.kern2 {
+  letter-spacing: 2px;
+}
+
+/* line 61, ../scss/_base.scss */
+.kern3 {
+  letter-spacing: 2px;
+}
+
+/* line 65, ../scss/_base.scss */
+.kern4 {
+  letter-spacing: -1px;
+}
+
+/* line 69, ../scss/_base.scss */
+.kern5 {
+  letter-spacing: 2px;
+}
+
+/* line 73, ../scss/_base.scss */
+.kern6 {
+  letter-spacing: -6px;
+}
+
+/* line 77, ../scss/_base.scss */
+.kern7 {
+  letter-spacing: 1px;
+}
+
+/* line 85, ../scss/_base.scss */
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+/* line 91, ../scss/_base.scss */
+a:visited {
+  color: white;
+}
+
+/* line 96, ../scss/_base.scss */
+a:hover {
+  text-decoration: none;
+  color: #a543ff;
+}
+
+/* line 102, ../scss/_base.scss */
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 109, ../scss/_base.scss */
+body {
+  background-color: rgba(26, 26, 26, 0.9);
+}
+
+/* line 112, ../scss/_base.scss */
+.top {
+  margin-left: 20px;
+}
+
+/* line 116, ../scss/_base.scss */
+.head {
+  height: 100px;
+  padding-top: 50px;
+  display: flex;
+  align-items: row;
+  justify-content: space-between;
+}
+
+/* line 124, ../scss/_base.scss */
+header {
+  font-family: "luculent-bolditalic";
+  font-size: 36px;
+  word-spacing: -12px;
+  float: left;
+  color: white;
+  margin-right: 20px;
+}
+
+/* line 136, ../scss/_base.scss */
+nav {
+  font-family: "luculent";
+  font-size: 12px;
+  float: right;
+  margin-top: 30px;
+  max-width: 100%;
+}
+/* line 147, ../scss/_base.scss */
+nav ul li {
+  display: inline;
+  margin-right: 62px;
+  font-size: 14px;
+}
+/* line 152, ../scss/_base.scss */
+nav ul li img {
+  height: 12px;
+  width: 12px;
+}
+
+/* line 162, ../scss/_base.scss */
+.stick {
+  text-align: right;
+  height: 20%;
+  margin-left: 30px;
+  padding-bottom: 20px;
+  width: 40px;
+  margin-top: 30px;
+}
+/* line 172, ../scss/_base.scss */
+.stick ul {
+  position: fixed;
+  margin-top: 30px;
+}
+/* line 177, ../scss/_base.scss */
+.stick ul li {
+  margin-bottom: 10px;
+  display: block;
+}
+/* line 184, ../scss/_base.scss */
+.stick ul li img {
+  width: 13px;
+  height: 13px;
+  margin-left: 7px;
+}
+/* line 190, ../scss/_base.scss */
+.stick ul li a:link {
+  color: rgba(255, 255, 255, 0);
+}
+/* line 195, ../scss/_base.scss */
+.stick ul li a:visited {
+  color: white;
+}
+/* line 199, ../scss/_base.scss */
+.stick ul li a:hover {
+  color: white;
+}
+/* line 203, ../scss/_base.scss */
+.stick ul li a:active {
+  color: white;
+}
+
+/* line 214, ../scss/_base.scss */
+h2 {
+  font-family: "luculent-italic";
+  font-size: 26px;
+  color: white;
+  padding-left: 35px;
+  padding-top: 10px;
+}
+
+/* line 223, ../scss/_base.scss */
+.design h2 {
+  color: #ffc4ff;
+}
+
+/* line 227, ../scss/_base.scss */
+.code h2 {
+  color: #0a0aff;
+}
+
+/* line 231, ../scss/_base.scss */
+.resume h2 {
+  color: #8fffa1;
+}
+
+/* line 235, ../scss/_base.scss */
+.contact h2 {
+  color: yellow;
+}
+
+/* line 239, ../scss/_base.scss */
+p {
+  font-family: "apercupro";
+  font-size: 10px;
+}
+
+/* line 255, ../scss/_base.scss */
+.intro {
+  height: 200px;
+  margin-top: 50px;
+  max-width: 100vw;
+}
+/* line 261, ../scss/_base.scss */
+.intro p {
+  color: white;
+  font-size: 32px;
+  line-height: 50px;
+}
+
+/* line 272, ../scss/_base.scss */
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 276, ../scss/_base.scss */
+main section {
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-bottom: 25px;
+  margin-top: 25px;
+  max-width: 100vw;
+  display: flex;
+  align-items: center;
+}
+
+/* line 288, ../scss/_base.scss */
+main div {
+  margin-top: 100px;
+}
+
+/* line 292, ../scss/_base.scss */
+main section img {
+  margin-left: 35px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+/* line 300, ../scss/_base.scss */
+main section p {
+  color: white;
+  display: inline;
+  vertical-align: 50%;
+  border: 1px solid white;
+  padding: 5px;
+  max-width: 100%;
+  margin-right: 20px;
+}
+
+/* line 313, ../scss/_base.scss */
+.contact {
+  margin-bottom: 40px;
+  padding-left: 40px;
+  color: white;
+}
+/* line 318, ../scss/_base.scss */
+.contact h2 {
+  margin-bottom: 30px;
+  padding-left: 0px;
+}
+/* line 323, ../scss/_base.scss */
+.contact p {
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 899px) {
+  /* line 334, ../scss/_base.scss */
+  .stick {
+    display: none;
+  }
+
+  /* line 338, ../scss/_base.scss */
+  main section img {
+    margin-left: 0px;
+  }
+
+  /* line 342, ../scss/_base.scss */
+  .head {
+    display: block;
+  }
+
+  /* line 346, ../scss/_base.scss */
+  nav {
+    float: left;
+  }
+
+  /* line 350, ../scss/_base.scss */
+  .top {
+    margin-left: 20px;
+  }
+
+  /* line 355, ../scss/_base.scss */
+  .intro {
+    width: 100%;
+    margin-top: 101px;
+  }
+
+  /* line 361, ../scss/_base.scss */
+  main section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* line 366, ../scss/_base.scss */
+  main section p {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* line 374, ../scss/_base.scss */
+  main section img {
+    margin-bottom: 0px;
+  }
+}
+@media only screen and (max-width: 570px) {
+  /* line 381, ../scss/_base.scss */
+  .stick {
+    display: none;
+  }
+
+  /* line 385, ../scss/_base.scss */
+  main section img {
+    margin-left: 0px;
+  }
+
+  /* line 389, ../scss/_base.scss */
+  header {
+    float: none;
+    text-align: center;
+  }
+
+  /* line 393, ../scss/_base.scss */
+  .intro p {
+    margin-bottom: 100px;
+    margin-top: 50px;
+    font-size: 20px;
+    margin-right: 20px;
+  }
+
+  /* line 401, ../scss/_base.scss */
+  .intro {
+    margin-bottom: 40px;
+    margin-top: 150px;
+  }
+
+  /* line 406, ../scss/_base.scss */
+  nav {
+    float: none;
+    width: 100%;
+    margin-left: 30%;
+    margin-top: 20px;
+  }
+
+  /* line 414, ../scss/_base.scss */
+  nav ul li {
+    display: block;
+    font-size: 25px;
+  }
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Hide visually and from screen readers
+ */
+/* line 9, ../scss/_after.scss */
+.hidden {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+/* line 18, ../scss/_after.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+/* line 35, ../scss/_after.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+/* line 49, ../scss/_after.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* line 65, ../scss/_after.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 71, ../scss/_after.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+@media print, (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+@media print {
+  /* line 98, ../scss/_after.scss */
+  *,
+  *:before,
+  *:after,
+  *:first-letter,
+  p:first-line,
+  div:first-line,
+  blockquote:first-line,
+  li:first-line {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster:
+       http://www.sanbeiji.com/archives/953 */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 113, ../scss/_after.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 118, ../scss/_after.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 122, ../scss/_after.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  /* line 131, ../scss/_after.scss */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  /* line 136, ../scss/_after.scss */
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  /* line 139, ../scss/_after.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  /* line 150, ../scss/_after.scss */
+  thead {
+    display: table-header-group;
+  }
+
+  /* line 154, ../scss/_after.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 159, ../scss/_after.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 166, ../scss/_after.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
