@@ -78,9 +78,8 @@ a:visited {
 
 a:hover {
   color: #d388ff;
-  background-color: 0, 242, 254, 1;
   display: all;
-  font-size: 20px;
+  font-size: 16px;
   letter-spacing: -1.5px;
   font-style: italic;
 }
@@ -102,7 +101,7 @@ a:hover {
 .inclass a:link {
   color: #d388ff;
   background-color: 0, 242, 254, 1;
-  font-size: 20px;
+  font-size: 14px;
   letter-spacing: -1.5px;
   font-style: italic;
   font-weight: bolder;
@@ -117,7 +116,7 @@ a:hover {
   color: black;
   background-color: 0, 242, 254, 1;
   display: all;
-  font-size: 20px;
+  font-size: 14px;
   letter-spacing: -1.5px;
   font-style: italic;
 }
@@ -204,7 +203,7 @@ a {
 }
 
 img {
-  border: 1px solid #a2ff64;
+  border: 2px solid #dddcdc;
 }
 
 @media only screen and (max-width: 550px) {
@@ -215,7 +214,7 @@ img {
   a:link {
     color: white;
     background-color: 0, 242, 254, 1;
-    font-size: 20px;
+    font-size: 14px;
     letter-spacing: -1.5px;
   }
 
@@ -230,7 +229,7 @@ img {
   a:hover {
     color: white;
     background-color: 0, 242, 254, 1;
-    font-size: 20px;
+    font-size: 14px;
     letter-spacing: -1.5px;
     font-style: italic;
   }
@@ -239,7 +238,7 @@ img {
   a:link {
     color: white;
     background-color: 0, 242, 254, 1;
-    font-size: 20px;
+    font-size: 14px;
     letter-spacing: -1.5px;
   }
 
@@ -254,7 +253,7 @@ img {
   a:hover {
     color: white;
     background-color: 0, 242, 254, 1;
-    font-size: 20px;
+    font-size: 14px;
     letter-spacing: -1.5px;
     font-style: italic;
   }
