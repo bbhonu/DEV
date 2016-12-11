@@ -176,6 +176,7 @@ main .code a:visited section{
 
 	background-color: rgba(143, 255, 161,.1);
 
+
 }
 
 main .code  a:hover section{
@@ -200,7 +201,8 @@ main .code a:link section p {
 
 main .code a:visited section p{
 
-	color: rgba(30,30,30,0);
+color: rgba(143, 255, 161,.7);
+border-color: rgba(143, 255, 161,.7);
 
 
 }
@@ -502,7 +504,9 @@ main a:active {
 .image {
 	display: inline;
 	margin-top: 100px;
+	margin-right: 20px;
 }
+
 
  section img {
 	vertical-align: middle;
@@ -715,6 +719,7 @@ margin-right: 5vw;
 margin-top: 0px;
 
 	}
+
 
 
 }
