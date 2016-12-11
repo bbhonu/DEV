@@ -8,12 +8,17 @@
 }
 
 .container {
-	width: 960px;
+	width: 100vw;
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 100%
 }
 
+.container2 {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
 .clearfix {
   display: table;
   content: " ";
@@ -106,8 +111,116 @@ a:active{
 
 		}
 
+main .design a:link section {
+	background-color: rgba(255, 196, 255, .1);
+	border-color: rgba(30,30,30,1);
+
+}
+
+main .design a:visited section{
+
+	background-color: rgba(255, 196, 255, .1);
+
+
+}
+
+main .design a:hover section{
+
+	background-color: transparent;
+
+}
+
+main .design a:active section{
+
+	background-color: rgba(165, 67, 255,1)
+
+
+}
+
+main .design a:link section p {
+	color: rgba(255, 196, 255, .7);
+	background-color: rgba(30,30,30,.9);
+
+}
+
+main .design a:visited section p{
+
+	color: rgba(255, 196, 255, .7);
+
+
+}
+
+main .design a:hover section p{
+
+	color: rgba(165, 67, 255,1);
+	border-color: rgba(165, 67, 255,1);
+
+}
+
+main .design a:active section p{
+
+	color: rgba(165, 67, 255,1)
+
+
+}
+
+// code sections 
+
+main .code a:link section {
+	background-color: rgba(143, 255, 161,.05);
+	border-color: rgba(143, 255, 161,.7);
+
+}
+
+main .code a:visited section{
+
+	background-color: rgba(143, 255, 161,.1);
+
+}
+
+main .code  a:hover section{
+background-color: transparent;
+	// border: solid 1px rgba(165, 67, 255,1)
+
+}
+
+main .code a:active section{
+
+	background-color: rgba(165, 67, 255,1)
+
+
+}
+
+main .code a:link section p {
+	color: rgba(143, 255, 161,.7);
+	background-color: rgba(30,30,30,1);;
+	border-color: rgba(143, 255, 161,1);
+
+}
+
+main .code a:visited section p{
+
+	color: rgba(30,30,30,0);
+
+
+}
+
+main .code a:hover section p{
+
+	color: rgba(165, 67, 255,1);
+	border-color: rgba(165, 67, 255,1);
+
+}
+
+main .code a:active section p{
+
+	color: rgba(165, 67, 255,1)
+
+
+}
+
 body {
-	background-color: rgba(26,26,26,.9);
+	background-color: rgba(36,36,36,1);
 }
 .top {
 	margin-left: 20px;
@@ -115,11 +228,24 @@ body {
 
 .head {
 	height: 100px;
-	padding-top: 50px;
+	padding-top: 80px;
 		display: flex;
 	align-items: row;
-	justify-content: space-between;
+	justify-content: flex-start;
+	position: fixed;
+	margin-top: -250px;
+	    background-color: rgba(48,48,48,1);
+	    width: 100%;
+	    margin-left: -20px;
+
 }
+
+a.anchor {display: block;
+    position: relative;
+    top: -130px;
+    visibility: hidden;}
+
+
 
 header {
 	font-family: "luculent-bolditalic";
@@ -127,7 +253,8 @@ header {
 	word-spacing: -12px;
 	float: left;
 	color: rgba(255,255,255,1);
-	margin-right: 20px;
+	margin-right: 50px;
+	padding-left: 40px;
 
 }
 
@@ -136,10 +263,10 @@ header {
 nav {
 	font-family: "luculent";
 	font-size: 12px;
-	float: right;
 	margin-top: 30px;
 	max-width: 100%;
-
+	// padding-right: 0px;
+	padding-left: 20px;
 
 
 	ul {
@@ -173,6 +300,7 @@ nav {
 
 		position: fixed;
 		margin-top: 30px;
+		min-width: 15%;
 
 		li {
 			margin-bottom: 10px;
@@ -220,16 +348,20 @@ h2 {
 
 }
 
+.design section {
+	background-color: rgba(255, 196, 255, .5);
+}
+
 .design h2 {
 	color: rgba(255,196,255,1);
 }
 
 .code h2 {
-	color: rgba(10,10,255,1);
+	color:rgba(143, 255, 161,1);
 }
 
 .resume h2 {
-	color: rgba(143,255,161,1);
+	color: rgba(34,138,255,1);
 }
 
 .contact h2 {
@@ -254,8 +386,8 @@ p {
 
 .intro {
 
-	height: 200px;
-	margin-top: 50px;
+	height: 400px;
+	margin-top: 190px;
 	max-width: 100vw;
 
 	p{
@@ -263,6 +395,9 @@ p {
 	color: rgba(255,255,255,1);
 	font-size: 32px;
 	line-height: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
+
 	}
 }
 
@@ -301,13 +436,15 @@ main section img {
 }
 
 main section p {
-		color: white;
-			display: inline;
-			vertical-align: 50%;
-			border: 1px solid white;
-			padding: 5px;
-			max-width: 100%;
-			margin-right: 20px;
+    display: inline;
+    vertical-align: 50%;
+    border: 1px solid #ffc4ff;
+    padding: 5px;
+    max-width: 100%;
+    margin-right: 20px;
+    font-size: 14px;
+    margin-left: 20px;
+    color: white;
 
 
 }
@@ -380,28 +517,34 @@ main a:active {
 
 
 }
+
+
  section p {
 		border: none;
 		margin-bottom: 10px;
 				color: white;
-			display: block;
+			// display: block;
 			vertical-align: top;
 			padding: 5px;
 			margin-right: 0px;
 			font-size: 13px;
-
-
-
-
-
 }
+
+
+.back {
+	font-family: "luculent";
+	font-size: 50px;
+}
+
+
+
 
 
 .description {
 	position: fixed;
 	border: none;
 	max-width: 300px;
-	padding-right: 30px;
+	padding-right: 40px;
 
 						line-height: 24px;
 			text-align: right;
@@ -417,7 +560,6 @@ main a:active {
 }
 
 header a {
-	margin-top: 25px;
 }
 
 
@@ -432,17 +574,17 @@ header {
 	width: 100%;
 	font-size: 22px;
 	letter-spacing: 5px;
-	padding-top: 10px;
+	padding-top: 25px;
 	padding-bottom: 10px;
 
+
 	h1{
-		margin-left: 70px;
+		margin-left: 90px;
 
 	}
 
 	a{
-		margin-left: 70px;
-		margin-top: 20px;
+
 	}
 }
 
@@ -458,7 +600,7 @@ main {
 
 // tablet styles 
 
-@media only screen and (max-width: 899px) {
+@media only screen and (max-width: 910px) {
 
 	.stick {
 		display: none;
@@ -470,20 +612,35 @@ main {
 
 	.head {
 		display: block;
+		margin-top: -270px;
 	}
 
 	nav {
 		float: left;
+		padding-left: 40px;
+		background-color: rgba(48,48,48,1);
+		margin-top: 0px;
+		padding-bottom: 10px;
+		padding-top: 10px;
+		width: 100vw;
+
+		a {
+		font-size: 18px;
+	}
 	}
 
 	.top {
 		margin-left: 
 		20px;
+
+
 	}
 
 	.intro {
 		width: 100%;
-		margin-top: 101px;
+		margin-top: 200px;
+
+
 		// margin-bottom: 50px;
 	}
 
@@ -514,6 +671,54 @@ main {
 	}
 
 
+//tablet for gallery 
+
+.gallery {
+
+	section
+	{
+		align-items: center
+	}
+
+
+	main {
+		display: flex;
+		flex-direction:column-reverse;
+		vertical-align: 50%;
+
+
+	}
+
+	h2 {
+		padding-left: 0px;
+	}
+
+	.description {
+		float: none;
+		position: inherit;
+		max-width: 80%;
+		text-align: center;
+		margin-left: 0px;
+		margin-right: 0px;
+		padding-right: 0px;
+
+		p{
+			font-size: 20px;
+			line-height: 30px;
+		}
+
+	}
+
+	.image {
+		margin-left:5vw;
+margin-right: 5vw;
+margin-top: 0px;
+
+	}
+
+
+}
+
 
 }
 
@@ -530,31 +735,70 @@ main {
 header {
 	float: none;
 	text-align: center;
+	h1 {
+		margin-top: 30px;
+	}
 }
 .intro p{
-	margin-bottom: 100px;
-	margin-top: 50px;
 	font-size: 20px;
 		margin-right: 20px;
 
 }
 
 .intro {
-	margin-bottom: 40px;
-	margin-top: 150px;
+	margin-top: 165px;
 }
+
 
 nav {
 	float: none;
 	width: 100%;
-	margin-left:30%;
-	margin-top: 20px;
+	margin-top: -10px;
 
 }
 
 nav ul li{
-	display: block;
+	display: inline;
 	font-size: 25px;
+	margin-right: 0px;
+
+}
+
+.head {
+	margin-top: -265px;
+}
+//gallery mobile
+
+.gallery {
+
+	.description {
+				padding-right: 0px;
+
+	}
+
+	header {
+		padding-top: 0px;
+		margin-top: -15px;
+	}
+
+	.image {
+		margin-top: -30px;
+	}
+
+	header a {
+		margin-left: 0px;
+		margin-top: 33px;
+		font-size: 10px;
+	}
+
+	.back {
+		font-size: 40px;
+	}
+
+	header h1 {
+		margin-left: 30px;
+	}
+
 
 }
 
@@ -562,5 +806,7 @@ nav ul li{
 
 
 	}
+
+
 // tablet styles
 
